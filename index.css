@@ -11,6 +11,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 18px;
+    font-weight: 400, 500, 700;
     justify-content: center;
  
 }
@@ -20,13 +22,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    display: flex;
-    margin: auto;
+    display: flex;;
     flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 20rem;
-   gap: 1rem;
+    justify-content: top;
+    align-items: center;
+    padding-top: 1.5rem;
+    height: 17rem;
+    gap: 1rem;
     color: white;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
@@ -34,15 +36,21 @@ body{
 }
 .Search-container{
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
-    width: fit-content;
-    padding: none;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
   
+} 
+h1{
+    text-align: center;
+    flex-wrap: nowrap;
+
 }
-section input{
-    width: 40rem;
+ input{ 
+    max-width:40rem;
+    width: 100%;
     outline: none;
     padding: 1rem;
      font-size: 20px;
@@ -54,33 +62,77 @@ section input{
 button{
     width: 3rem;
     font-size: 20px;
+    max-height: 4rem;
+    height: 100%;
     padding: 1rem;
     border-radius: 0 25px 25px 0;
     border: none;
-    background-color: black;
+    background-color: hsl(0, 0%, 17%);
     color: white;
+
 }
 .output_info{
     display: flex;
-    max-width: 80%;
+    max-width: 900px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0  2rem  0 2rem;
+    bottom: 0rem;
+    padding: 0  .2rem  0 .2rem;
     box-shadow: 3px 3px 3px 3px rgb(235, 232, 227);
     position: absolute;
-    z-index: 1;
     background-color: white;
-    bottom: 40%;
     border-radius: 10px;
     height: 7rem;
 }
 .output_info div{
-    border-left: 1px solid hsl(0, 2%, 75%);
+    border-left: 1px solid hsl(0, 0%, 59%);
     padding: 1rem;
 
 }
 .output_info .borderNone{
     border:none ;
+}
+.ip_section_infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 ;
+
+}
+@media all and (max-width:400px) {
+  .output_info{
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    padding-left: 0;
+    width: fit-content;
+    box-shadow: 3px 3px 3px 3px rgb(235, 232, 227);
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: -80%;
+    border-radius: 10px;
+    height: fit-content;
+   
+} 
+.output_info div , .borderNone{
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    width: 100%;
+    padding: 1rem;
+    border-left:none;
+}
+.output_info .borderNones{
+    border:none ;
+}
+}
+
+
+.map{
+    max-width: 1440px;
+    width: 100%;
 }
