@@ -16,6 +16,10 @@ body{
     justify-content: center;
  
 }
+h2{
+    font-size: 16px;
+    color: rgb(145, 135, 135)
+}
 .header-info{
     background-image: var(--background-color-desktop);
     background-size: cover;
@@ -67,7 +71,7 @@ button{
     padding: 1rem;
     border-radius: 0 25px 25px 0;
     border: none;
-    background-color: hsl(0, 0%, 17%);
+    background-color: hsl(0, 1%, 14%);
     color: white;
 
 }
@@ -99,6 +103,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: 25rem;
     position: relative;
     width: 100%;
     margin: 0 ;
@@ -112,10 +117,10 @@ button{
     padding-left: 0;
     width: fit-content;
     box-shadow: 3px 3px 3px 3px rgb(235, 232, 227);
-    position: absolute;
+    position:absolute;
     background-color: white;
     left: 0;
-    bottom: -80%;
+    bottom: -10.6rem;
     border-radius: 10px;
     height: fit-content;
    
